@@ -5,6 +5,14 @@ public class Motor {
 	public Motor(int cilindrada) {
 		this.cilindrada = cilindrada;
 	}
+
+  public void setCilindrada(int cilindrada) {
+    this.cilindrada = cilindrada;
+  }
+
+  public int getCilindrada() {
+    return cilindrada;
+  }
 	
 	public void cambiarMotor() {
 		if (arrancado == true) {
@@ -20,5 +28,6 @@ public class Motor {
 		Motor motor1 = new Motor(2000);
 		motor1.cambiarMotor();
 		motor1.cambiarMotor();
+    System.out.println(motor1.getCilindrada());
 	}
 }
