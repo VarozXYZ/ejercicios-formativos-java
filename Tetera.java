@@ -1,5 +1,3 @@
-package tetera;
-
 public class Tetera {
 	private int _capacidadActual;
 	private int _capacidadMaxima;
