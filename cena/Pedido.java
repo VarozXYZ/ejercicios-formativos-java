@@ -30,13 +30,13 @@ public class Pedido {
     }
 
     public void getPedido() {
-        if (PrimerPlato.nombre != "") {
+        if (primerPlato != null) {
         System.out.println("El primer plato es " + primerPlato.getNombre() + " y cuesta " + primerPlato.getPrecio());}
-        if (SegundoPlato.nombre != "") {
+        if (segundoPlato != null) {
         System.out.println("El segundo plato es " + segundoPlato.getNombre()  + " y cuesta " + segundoPlato.getPrecio());}
-        if (Bebida.nombre != "") {
+        if (bebida != null) {
         System.out.println("La bebida es " + bebida.getNombre()  + " y cuesta " + bebida.getPrecio());}
-        if (Postre.nombre != "") {
+        if (postre != null) {
         System.out.println("El postre es " + postre.getNombre() + " y cuesta " + postre.getPrecio());}
     }
 
