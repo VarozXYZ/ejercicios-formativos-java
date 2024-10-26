@@ -10,34 +10,34 @@ public class Pedido {
 
     public Pedido (String nombrePrimerPlato, float precioPrimerPlato, String nombreBebida, float precioBebida) {
 
-        PrimerPlato primerPlato = new PrimerPlato(nombrePrimerPlato, precioPrimerPlato);
-        Bebida bebida = new Bebida (nombreBebida, precioBebida);
+        this.primerPlato = new PrimerPlato(nombrePrimerPlato, precioPrimerPlato);
+        this.bebida = new Bebida (nombreBebida, precioBebida);
     }
 
     public Pedido (String nombrePrimerPlato, float precioPrimerPlato, String nombreSegundoPlato, float precioSegundoPlato, String nombreBebida, float precioBebida) {
 
-        PrimerPlato primerPlato = new PrimerPlato(nombrePrimerPlato, precioPrimerPlato);
-        SegundoPlato segundoPlato = new SegundoPlato(nombreSegundoPlato, precioSegundoPlato);
-        Bebida bebida = new Bebida (nombreBebida, precioBebida);
+        this.primerPlato = new PrimerPlato(nombrePrimerPlato, precioPrimerPlato);
+        this.segundoPlato = new SegundoPlato(nombreSegundoPlato, precioSegundoPlato);
+        this.bebida = new Bebida (nombreBebida, precioBebida);
     }
 
     public Pedido (String nombrePrimerPlato, float precioPrimerPlato, String nombreSegundoPlato, float precioSegundoPlato, String nombreBebida, float precioBebida, String nombrePostre, float precioPostre) {
 
-        PrimerPlato primerPlato = new PrimerPlato(nombrePrimerPlato, precioPrimerPlato);
-        SegundoPlato segundoPlato = new SegundoPlato(nombreSegundoPlato, precioSegundoPlato);
-        Bebida bebida = new Bebida (nombreBebida, precioBebida);
-        Postre postre = new Postre (nombrePostre, precioPostre);
+        this.primerPlato = new PrimerPlato(nombrePrimerPlato, precioPrimerPlato);
+        this.segundoPlato = new SegundoPlato(nombreSegundoPlato, precioSegundoPlato);
+        this.bebida = new Bebida (nombreBebida, precioBebida);
+        this.postre = new Postre (nombrePostre, precioPostre);
     }
 
     public void getPedido() {
         if (PrimerPlato.nombre != "") {
-        System.out.println("El primer plato es " + PrimerPlato.nombre + " y cuesta " + PrimerPlato.precio);}
+        System.out.println("El primer plato es " + primerPlato.getNombre() + " y cuesta " + primerPlato.getPrecio());}
         if (SegundoPlato.nombre != "") {
-        System.out.println("El segundo plato es " + SegundoPlato.nombre  + " y cuesta " + SegundoPlato.precio);}
+        System.out.println("El segundo plato es " + segundoPlato.getNombre()  + " y cuesta " + segundoPlato.getPrecio());}
         if (Bebida.nombre != "") {
-        System.out.println("La bebida es " + Bebida.nombre  + " y cuesta " + Bebida.precio);}
+        System.out.println("La bebida es " + bebida.getNombre()  + " y cuesta " + bebida.getPrecio());}
         if (Postre.nombre != "") {
-        System.out.println("El postre es " + Postre.nombre + " y cuesta " + Postre.precio);}
+        System.out.println("El postre es " + postre.getNombre() + " y cuesta " + postre.getPrecio());}
     }
 
     public static void main (String[] args) {
