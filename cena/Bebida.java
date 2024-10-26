@@ -5,8 +5,8 @@ public class Bebida {
     private float precio = 0;
 
     public Bebida (String nombre, float precio) {
-    this.nombre = nombre;
-    this.precio = precio;
+        this.nombre = nombre;
+        this.precio = precio;
     }
 
     public String getNombre() {
