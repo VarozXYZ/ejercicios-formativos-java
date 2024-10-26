@@ -20,7 +20,7 @@ espacio en blanco (será un NIF no válido).
 • Modificadores y Observadores.
 • leer(): que pida el número de DNI (ajustando automáticamente la letra).
 • Método que nos permita mostrar el NIF (ocho dígitos, un guión y la letra en mayúscula; por ejemplo: 00395469-F) La letra se calculará con un método auxiliar (privado) de la siguiente forma: se obtiene el resto de la división entera del número de DNI entre 23 y se usa la siguiente tabla para obtener la letra que corresponde:
-<img src"https://i.imgur.com/mwoUWWD.png">
+<img src="https://i.imgur.com/mwoUWWD.png"/>
 
 3) Crea la clase:
 Motor: con métodos para arrancar el motor y apagarlo.
