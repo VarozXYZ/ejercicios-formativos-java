@@ -89,5 +89,7 @@ public class Tetera {
 		teteraMaxima.getCapacidadActual();
 		
 		teteraMaxima.agregarCafe(2000);
+
+		teteraSuperada.vaciarTe();
 	}
 }
