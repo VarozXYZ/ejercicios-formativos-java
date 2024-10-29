@@ -1,19 +1,14 @@
 package furgoneta;
 
-public class Ventana {
+public class Ventana extends Puerta {
 	private boolean abierta;
+	private boolean tintada;
+		
 	
-	 public void isAbierta() {
-        if (abierta == true) 
-        	System.out.println("La ventana está abierta");
-        else System.out.println("La ventana está cerrada");
-    }
-	
-	public void abrir() {
-		abierta = true;
+	public Ventana (boolean tintada) {
+		super(false, true);
+		this.tintada = tintada;
 	}
 	
-	public void cerrar() {
-		abierta = false;
-	}
 }
+
